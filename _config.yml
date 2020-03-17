@@ -5,13 +5,12 @@ description: Kumcu & Yağlı
 # url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
-username: 925 Türkçe Sözcük için Duyu Normları
+username: Türkçe Sözcükler için Duyu Normları
 user_description: 
 user_title: Kumcu & Yağlı
 email: 925sozcuk@gmail.com
-# twitter_username: lorem_ipsum
-# github_username:  lorem_ipsum
-# gplus_username:  lorem_ipsum
+# twitter_username: alperkumcu
+# github_username:   925sozcuk
 
 # Google-analytics
 google-analytics:
