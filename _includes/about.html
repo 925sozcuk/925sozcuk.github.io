@@ -1,20 +1,24 @@
-<div class="user-details">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Redirect</title>
+  <script>
+    const forms = [
+      "https://docs.google.com/forms/d/e/FORM_ID_1/viewform",
+      "https://docs.google.com/forms/d/e/FORM_ID_2/viewform",
+      "https://docs.google.com/forms/d/e/FORM_ID_3/viewform",
+      // ...
+      "https://docs.google.com/forms/d/e/FORM_ID_23/viewform"
+    ];
 
-  <h1>Nedir?</h1>
-  <p>925 Türkçe Sözcük için Duyu Normları projesi ana dili Türkçe olan gönüllü katılımcılardan 
-   Türkçe isimler için altı duyu (dokunma, işitme, koklama, tatma, görme ve içduyum) ile ilgili veri toplamayı amaçlamaktadır. 
-   Daha fazla bilgi için projenin <a href="https://osf.io/m34u7/" target="_blank">OSF</a> ya da <a href="https://www.researchgate.net/project/Sensory-Norms-for-925-Turkish-Nouns" target="_blank">ResearchGate</a> sayfasına göz atabilirsiniz.</p>
-  
-  <h1>Nasıl Katılabilirim?</h1>
-  <p>Hemen şimdi aşağıdaki bağlantılardan dilediğiniz birine tıklayarak siz de çalışmaya katılabilirsiniz. 
-    Aynı anketi birden fazla kez dolduramazsınız ancak birden fazla anketi doldurabilirsiniz. 
-    Sözcükler ve duyular arasındaki bağlantıyı daha iyi anlamamıza yardımcı olduğunuz için çok teşekkür ederiz!</p>
-  
-  <h1>Listeler</h1>
-  <p><a href="https://forms.gle/VgCE7fvPC79RuAGK9">Liste 16</a></p>
-  <p><a href="https://forms.gle/SsqguBKS615eZHzs6">Liste 17</a></p>
-  <p><a href="https://forms.gle/nb3tinVGVhiYydHH9">Liste 18</a></p>
-  <p><a href="https://forms.gle/11tchpGEqQYnZZNb6">Liste 19</a></p>
-  <p><a href="https://forms.gle/47k5XbhJfEQAV1y66">Liste 20</a></p>
-  
-</div>
+    const randomForm = forms[Math.floor(Math.random() * forms.length)];
+
+    window.location.replace(randomForm);
+  </script>
+</head>
+<body>
+  <p>Redirecting to the questionnaire…</p>
+</body>
+</html>
+
