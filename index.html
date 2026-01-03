@@ -6,18 +6,24 @@ layout: none
 <head>
   <meta charset="UTF-8">
   <title>Survey Redirect</title>
-  <script>
-    const forms = [
-      "https://forms.gle/NiscbvUH2jwPV2wU7",
-      "https://forms.gle/6CEDTpe85JYKJRtz5",
-      "https://forms.gle/5XMxBYttvisigp6B7",
-      "https://forms.gle/N1QWWiaYqTSUpV918",
-      "https://forms.gle/66Kb5kcv9X7mH5oH9"
-    ];
+ <script>
+  const forms = [
+    // 1
+    "https://forms.gle/NiscbvUH2jwPV2wU7",
 
-    const randomForm = forms[Math.floor(Math.random() * forms.length)];
-    window.location.replace(randomForm);
-  </script>
+    // 2
+    "https://forms.gle/6CEDTpe85JYKJRtz5",
+
+    // 3
+    "https://forms.gle/5XMxBYttvisigp6B7",
+
+    // 4
+    "https://forms.gle/N1QWWiaYqTSUpV918"
+  ];
+
+  const randomForm = forms[Math.floor(Math.random() * forms.length)];
+  window.location.replace(randomForm);
+</script>
 </head>
 <body>
   <p>Redirecting to the questionnaire…</p>
