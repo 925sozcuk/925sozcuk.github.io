@@ -1,3 +1,23 @@
 ---
-layout: default
+layout: none
 ---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Redirect</title>
+  <script>
+    const forms = [
+      "https://docs.google.com/forms/d/e/FORM_ID_1/viewform",
+      // ...
+      "https://docs.google.com/forms/d/e/FORM_ID_23/viewform"
+    ];
+
+    const randomForm = forms[Math.floor(Math.random() * forms.length)];
+    window.location.replace(randomForm);
+  </script>
+</head>
+<body>
+  <p>Redirecting to the questionnaire…</p>
+</body>
+</html>
