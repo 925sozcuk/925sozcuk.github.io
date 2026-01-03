@@ -6,17 +6,13 @@ layout: none
 <head>
   <meta charset="UTF-8">
   <title>Survey Redirect</title>
- <script>
-  const forms = [
-  /* 16 */ "https://forms.gle/NiscbvUH2jwPV2wU7",
-  /* 17 */ "https://forms.gle/6CEDTpe85JYKJRtz5",
-  /* 18 */ "https://forms.gle/5XMxBYttvisigp6B7",
-  /* 19 */ "https://forms.gle/N1QWWiaYqTSUpV918"
-];
+  <script>
+    // Paste your Apps Script Web App URL here:
+    const ASSIGNER_URL = "https://script.google.com/macros/s/AKfycbwDcGGvh-fbAIxQCfLE4ZQoJMLaMGKoh24Mbouny-bu3Gc7dSTDwbasgkZp3aMSdTgN/exec
+";
 
-  const randomForm = forms[Math.floor(Math.random() * forms.length)];
-  window.location.replace(randomForm);
-</script>
+    window.location.replace(ASSIGNER_URL);
+  </script>
 </head>
 <body>
   <p>Redirecting to the questionnaire…</p>
