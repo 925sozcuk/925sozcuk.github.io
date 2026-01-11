@@ -7,6 +7,7 @@ layout: none
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>925 Sözcük – Tüm Anketler</title>
+
   <style>
     body {
       margin: 0;
@@ -32,36 +33,11 @@ layout: none
     h1 {
       margin: 0 0 0.5rem 0;
       font-size: 2rem;
-      line-height: 1.2;
     }
 
     .sub {
-      margin: 0.25rem 0 1.25rem 0;
+      margin-bottom: 1.5rem;
       opacity: 0.9;
-      font-size: 1rem;
-    }
-
-    .actions {
-      display: flex;
-      gap: 0.75rem;
-      justify-content: center;
-      flex-wrap: wrap;
-      margin: 1.25rem 0 1.75rem;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 0.65rem 1.1rem;
-      border-radius: 10px;
-      text-decoration: none;
-      color: #fff;
-      background: rgba(255,255,255,0.15);
-      transition: background 0.15s ease, transform 0.15s ease;
-    }
-
-    .btn:hover {
-      background: rgba(255,255,255,0.25);
-      transform: translateY(-1px);
     }
 
     .list {
@@ -69,62 +45,54 @@ layout: none
       padding: 0;
       margin: 0;
       display: grid;
-      grid-template-columns: 1fr;
       gap: 0.75rem;
     }
 
     .item {
       display: flex;
-      align-items: center;
       justify-content: space-between;
-      gap: 1rem;
-      padding: 1rem 1rem;
+      align-items: center;
+      padding: 1rem 1.25rem;
       border-radius: 16px;
       background: rgba(255,255,255,0.12);
       box-shadow: 0 10px 25px rgba(0,0,0,0.18);
-      backdrop-filter: blur(6px);
-    }
-
-    .left {
-      min-width: 0;
-      flex: 1;
     }
 
     .qid {
       font-weight: 800;
-      font-size: 1.1rem;
-      margin-bottom: 0.25rem;
-    }
-
-    .url {
-      font-size: 0.9rem;
-      opacity: 0.9;
-      word-break: break-all;
+      font-size: 1.15rem;
     }
 
     .open-button {
-      flex: 0 0 auto;
       font-weight: 800;
-      padding: 0.75rem 1.1rem;
+      padding: 0.7rem 1.3rem;
       border-radius: 999px;
       background: linear-gradient(135deg, #ffdd00, #ff9900);
       color: #2b2b2b;
       text-decoration: none;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.22);
-      transition: transform 0.15s ease, box-shadow 0.15s ease;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.22);
+      transition: transform 0.15s ease;
     }
 
     .open-button:hover {
       transform: translateY(-2px);
-      box-shadow: 0 14px 30px rgba(0,0,0,0.28);
     }
 
-    .footer-note {
-      margin-top: 1.25rem;
+    .footer {
+      margin-top: 1.5rem;
       text-align: center;
-      font-size: 0.9rem;
       opacity: 0.85;
-      padding: 0 1rem;
+      font-size: 0.9rem;
+    }
+
+    .back {
+      display: inline-block;
+      margin-bottom: 1.5rem;
+      color: #fff;
+      text-decoration: none;
+      background: rgba(255,255,255,0.15);
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
     }
   </style>
 </head>
@@ -132,180 +100,42 @@ layout: none
 <body>
   <div class="container">
     <header>
-      <h1>Tüm anketler</h1>
-      <p class="sub">Aşağıdan herhangi bir anketi açabilirsiniz (23 adet).</p>
-      <div class="actions">
-        <a class="btn" href="./">Ana sayfaya dön</a>
-      </div>
+      <h1>Tüm Anketler</h1>
+      <p class="sub">16–38 numaralı anketler</p>
+      <a class="back" href="./">Ana sayfaya dön</a>
     </header>
 
     <ul class="list">
-      <li class="item">
-        <div class="left">
-          <div class="qid">Anket 16</div>
-          <div class="url">https://forms.gle/ZPvNUVbMknjZo8cK8</div>
-        </div>
-        <a class="open-button" href="https://forms.gle/ZPvNUVbMknjZo8cK8" target="_blank" rel="noopener noreferrer">Aç</a>
-      </li>
-      <li class="item">
-        <div class="left">
-          <div class="qid">Anket 17</div>
-          <div class="url">https://forms.gle/PV27mBzLq91jX9oS7</div>
-        </div>
-        <a class="open-button" href="https://forms.gle/PV27mBzLq91jX9oS7" target="_blank" rel="noopener noreferrer">Aç</a>
-      </li>
-      <li class="item">
-        <div class="left">
-          <div class="qid">Anket 18</div>
-          <div class="url">https://forms.gle/3TWoEPAArNf4e5Qd7</div>
-        </div>
-        <a class="open-button" href="https://forms.gle/3TWoEPAArNf4e5Qd7" target="_blank" rel="noopener noreferrer">Aç</a>
-      </li>
-      <li class="item">
-        <div class="left">
-          <div class="qid">Anket 19</div>
-          <div class="url">https://forms.gle/u27YAEhncCmxEe4t6</div>
-        </div>
-        <a class="open-button" href="https://forms.gle/u27YAEhncCmxEe4t6" target="_blank" rel="noopener noreferrer">Aç</a>
-      </li>
-      <li class="item">
-        <div class="left">
-          <div class="qid">Anket 20</div>
-          <div class="url">https://forms.gle/vEKgWCGMUSkfZRsE9</div>
-        </div>
-        <a class="open-button" href="https://forms.gle/vEKgWCGMUSkfZRsE9" target="_blank" rel="noopener noreferrer">Aç</a>
-      </li>
-      <li class="item">
-        <div class="left">
-          <div class="qid">Anket 21</div>
-          <div class="url">https://forms.gle/JcyaDtgHX3qg31af7</div>
-        </div>
-        <a class="open-button" href="https://docs.google.com/forms/d/e/1FAIpQLSd35qeWpnQ707aFxVSmTYi-CJNPmoob4-ewJW3dtvkUFUoJIw/viewform?usp=dialog" target="_blank" rel="noopener noreferrer">Aç</a>
-      </li>
-      <li class="item">
-        <div class="left">
-          <div class="qid">Anket 22</div>
-          <div class="url">https://forms.gle/WH4U1y6wzjJX5wWw8</div>
-        </div>
-        <a class="open-button" href="https://forms.gle/WH4U1y6wzjJX5wWw8" target="_blank" rel="noopener noreferrer">Aç</a>
-      </li>
-      <li class="item">
-        <div class="left">
-          <div class="qid">Anket 23</div>
-          <div class="url">https://forms.gle/8TwQW2f2Gm3kzCsy8</div>
-        </div>
-        <a class="open-button" href="https://forms.gle/8TwQW2f2Gm3kzCsy8" target="_blank" rel="noopener noreferrer">Aç</a>
-      </li>
-      <li class="item">
-        <div class="left">
-          <div class="qid">Anket 24</div>
-          <div class="url">https://forms.gle/5wE8VqHqgBMcY7Hh8</div>
-        </div>
-        <a class="open-button" href="https://forms.gle/5wE8VqHqgBMcY7Hh8" target="_blank" rel="noopener noreferrer">Aç</a>
-      </li>
-      <li class="item">
-        <div class="left">
-          <div class="qid">Anket 25</div>
-          <div class="url">https://forms.gle/smEhjGNE7QYVmrXo8</div>
-        </div>
-        <a class="open-button" href="https://forms.gle/smEhjGNE7QYVmrXo8" target="_blank" rel="noopener noreferrer">Aç</a>
-      </li>
-      <li class="item">
-        <div class="left">
-          <div class="qid">Anket 26</div>
-          <div class="url">https://forms.gle/7w1mZ8GmQjvSgqHD8</div>
-        </div>
-        <a class="open-button" href="https://forms.gle/7w1mZ8GmQjvSgqHD8" target="_blank" rel="noopener noreferrer">Aç</a>
-      </li>
-      <li class="item">
-        <div class="left">
-          <div class="qid">Anket 27</div>
-          <div class="url">https://forms.gle/1Q7b1Hnq9v7dV7dA6</div>
-        </div>
-        <a class="open-button" href="https://forms.gle/1Q7b1Hnq9v7dV7dA6" target="_blank" rel="noopener noreferrer">Aç</a>
-      </li>
-      <li class="item">
-        <div class="left">
-          <div class="qid">Anket 28</div>
-          <div class="url">https://forms.gle/8XfBfB2G3HfKfWcW6</div>
-        </div>
-        <a class="open-button" href="https://forms.gle/8XfBfB2G3HfKfWcW6" target="_blank" rel="noopener noreferrer">Aç</a>
-      </li>
-      <li class="item">
-        <div class="left">
-          <div class="qid">Anket 29</div>
-          <div class="url">https://forms.gle/U5k8z7o5cKjVbqvP7</div>
-        </div>
-        <a class="open-button" href="https://forms.gle/U5k8z7o5cKjVbqvP7" target="_blank" rel="noopener noreferrer">Aç</a>
-      </li>
-      <li class="item">
-        <div class="left">
-          <div class="qid">Anket 30</div>
-          <div class="url">https://forms.gle/R7X6Wv6m8y8FQwCw8</div>
-        </div>
-        <a class="open-button" href="https://forms.gle/R7X6Wv6m8y8FQwCw8" target="_blank" rel="noopener noreferrer">Aç</a>
-      </li>
-      <li class="item">
-        <div class="left">
-          <div class="qid">Anket 31</div>
-          <div class="url">https://forms.gle/5rVgVv5JQx2nHh8f7</div>
-        </div>
-        <a class="open-button" href="https://forms.gle/5rVgVv5JQx2nHh8f7" target="_blank" rel="noopener noreferrer">Aç</a>
-      </li>
-      <li class="item">
-        <div class="left">
-          <div class="qid">Anket 32</div>
-          <div class="url">https://forms.gle/fZr8a8e9cVfG3kQy9</div>
-        </div>
-        <a class="open-button" href="https://forms.gle/fZr8a8e9cVfG3kQy9" target="_blank" rel="noopener noreferrer">Aç</a>
-      </li>
-      <li class="item">
-        <div class="left">
-          <div class="qid">Anket 33</div>
-          <div class="url">https://forms.gle/3rj3C8g1xv8q8x7X8</div>
-        </div>
-        <a class="open-button" href="https://forms.gle/3rj3C8g1xv8q8x7X8" target="_blank" rel="noopener noreferrer">Aç</a>
-      </li>
-      <li class="item">
-        <div class="left">
-          <div class="qid">Anket 34</div>
-          <div class="url">https://forms.gle/5jz1jDqzGkTgS1bJ9</div>
-        </div>
-        <a class="open-button" href="https://forms.gle/5jz1jDqzGkTgS1bJ9" target="_blank" rel="noopener noreferrer">Aç</a>
-      </li>
-      <li class="item">
-        <div class="left">
-          <div class="qid">Anket 35</div>
-          <div class="url">https://forms.gle/W4Gm6x2v8p3JmKxD8</div>
-        </div>
-        <a class="open-button" href="https://forms.gle/W4Gm6x2v8p3JmKxD8" target="_blank" rel="noopener noreferrer">Aç</a>
-      </li>
-      <li class="item">
-        <div class="left">
-          <div class="qid">Anket 36</div>
-          <div class="url">https://forms.gle/cqV5q1b5j5z3Q1zX8</div>
-        </div>
-        <a class="open-button" href="https://forms.gle/cqV5q1b5j5z3Q1zX8" target="_blank" rel="noopener noreferrer">Aç</a>
-      </li>
-      <li class="item">
-        <div class="left">
-          <div class="qid">Anket 37</div>
-          <div class="url">https://forms.gle/BW9r6wF5h8xGv2Yd6</div>
-        </div>
-        <a class="open-button" href="https://forms.gle/BW9r6wF5h8xGv2Yd6" target="_blank" rel="noopener noreferrer">Aç</a>
-      </li>
-      <li class="item">
-        <div class="left">
-          <div class="qid">Anket 38</div>
-          <div class="url">https://forms.gle/4xq1n7W2Kf4sPz7r7</div>
-        </div>
-        <a class="open-button" href="https://forms.gle/4xq1n7W2Kf4sPz7r7" target="_blank" rel="noopener noreferrer">Aç</a>
-      </li>
+
+      <li class="item"><div class="qid">Anket 16</div><a class="open-button" href="https://forms.gle/ZPvNUVbMknjZo8cK8" target="_blank">Aç</a></li>
+      <li class="item"><div class="qid">Anket 17</div><a class="open-button" href="https://forms.gle/PV27mBzLq91jX9oS7" target="_blank">Aç</a></li>
+      <li class="item"><div class="qid">Anket 18</div><a class="open-button" href="https://forms.gle/3TWoEPAArNf4e5Qd7" target="_blank">Aç</a></li>
+      <li class="item"><div class="qid">Anket 19</div><a class="open-button" href="https://forms.gle/u27YAEhncCmxEe4t6" target="_blank">Aç</a></li>
+      <li class="item"><div class="qid">Anket 20</div><a class="open-button" href="https://forms.gle/vEKgWCGMUSkfZRsE9" target="_blank">Aç</a></li>
+      <li class="item"><div class="qid">Anket 21</div><a class="open-button" href="https://forms.gle/wW6pY6jJbFJHqgF86" target="_blank">Aç</a></li>
+      <li class="item"><div class="qid">Anket 22</div><a class="open-button" href="https://forms.gle/WH4U1y6wzjJX5wWw8" target="_blank">Aç</a></li>
+      <li class="item"><div class="qid">Anket 23</div><a class="open-button" href="https://forms.gle/8TwQW2f2Gm3kzCsy8" target="_blank">Aç</a></li>
+      <li class="item"><div class="qid">Anket 24</div><a class="open-button" href="https://forms.gle/5wE8VqHqgBMcY7Hh8" target="_blank">Aç</a></li>
+      <li class="item"><div class="qid">Anket 25</div><a class="open-button" href="https://forms.gle/smEhjGNE7QYVmrXo8" target="_blank">Aç</a></li>
+      <li class="item"><div class="qid">Anket 26</div><a class="open-button" href="https://forms.gle/7w1mZ8GmQjvSgqHD8" target="_blank">Aç</a></li>
+      <li class="item"><div class="qid">Anket 27</div><a class="open-button" href="https://forms.gle/1Q7b1Hnq9v7dV7dA6" target="_blank">Aç</a></li>
+      <li class="item"><div class="qid">Anket 28</div><a class="open-button" href="https://forms.gle/8XfBfB2G3HfKfWcW6" target="_blank">Aç</a></li>
+      <li class="item"><div class="qid">Anket 29</div><a class="open-button" href="https://forms.gle/U5k8z7o5cKjVbqvP7" target="_blank">Aç</a></li>
+      <li class="item"><div class="qid">Anket 30</div><a class="open-button" href="https://forms.gle/R7X6Wv6m8y8FQwCw8" target="_blank">Aç</a></li>
+      <li class="item"><div class="qid">Anket 31</div><a class="open-button" href="https://forms.gle/5rVgVv5JQx2nHh8f7" target="_blank">Aç</a></li>
+      <li class="item"><div class="qid">Anket 32</div><a class="open-button" href="https://forms.gle/fZr8a8e9cVfG3kQy9" target="_blank">Aç</a></li>
+      <li class="item"><div class="qid">Anket 33</div><a class="open-button" href="https://forms.gle/3rj3C8g1xv8q8x7X8" target="_blank">Aç</a></li>
+      <li class="item"><div class="qid">Anket 34</div><a class="open-button" href="https://forms.gle/5jz1jDqzGkTgS1bJ9" target="_blank">Aç</a></li>
+      <li class="item"><div class="qid">Anket 35</div><a class="open-button" href="https://forms.gle/W4Gm6x2v8p3JmKxD8" target="_blank">Aç</a></li>
+      <li class="item"><div class="qid">Anket 36</div><a class="open-button" href="https://forms.gle/cqV5q1b5j5z3Q1zX8" target="_blank">Aç</a></li>
+      <li class="item"><div class="qid">Anket 37</div><a class="open-button" href="https://forms.gle/BW9r6wF5h8xGv2Yd6" target="_blank">Aç</a></li>
+      <li class="item"><div class="qid">Anket 38</div><a class="open-button" href="https://forms.gle/4xq1n7W2Kf4sPz7r7" target="_blank">Aç</a></li>
+
     </ul>
 
-    <p class="footer-note">
+    <div class="footer">
       Not: Her anket yeni sekmede açılır.
-    </p>
+    </div>
   </div>
 </body>
 </html>
